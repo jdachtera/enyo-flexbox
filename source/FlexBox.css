@@ -1,0 +1,122 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.flexBox {
+    display: -webkit-box;
+	display: -moz-box;
+	display: box;
+    
+    -webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+    
+    -webkit-box-align: stretch;
+	-moz-box-align: stretch;
+	box-align: stretch;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    
+    -webkit-flex-wrap: nowrap; 
+    -moz-flex-wrap: nowrap; 
+    flex-wrap: nowrap; 
+
+	height: 100%;
+    width:100%;
+}
+
+.flexBox.emulate {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.flexBox.emulate > * {
+    vertical-align: top;
+    display:-moz-inline-stack;
+    display: inline-block;
+    *zoom:1;
+    *display:inline;
+}
+
+.flexBox > *{
+    overflow: hidden;
+}
+
+.flexBox.orientation-vertical {
+    -webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+    
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    
+}
+
+.flexBox.align-start {
+    -webkit-box-align: start;
+	-moz-box-align: start;
+	box-align: start;
+    
+    -moz-align-items: start;
+    -webkit-align-items: start;
+    align-items: start;
+}
+.flexBox.align-center {
+    -webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+    
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+.flexBox.align-end {
+    -webkit-box-align: end;
+	-moz-box-align: end;
+	box-align: end;
+    
+    -webkit-align-items: end;
+    -moz-align-items: end;
+    align-items: end;
+}
+
+
+.flexBox.pack-center {
+    -webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+    
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+}
+.flexBox.pack-end {
+    -webkit-box-pack: end;
+	-moz-box-pack: end;
+	box-pack: end;
+    
+    -webkit-justify-content: end;
+    -moz-justify-content: end;
+    justify-content: end;
+}
+.flexBox.pack-justify {
+    -webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	box-pack: justify;
+    
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+}
